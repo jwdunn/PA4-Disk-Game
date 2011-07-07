@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, GameActivity!</string>
-    <string name="app_name">PA3</string>
+    <string name="app_name">Disk Warrior PA3</string>
     <string name="button1">PLAY GAME</string>
+     <string name="play">PLAY GAME</string>
+      <string name="about">About</string>
+       <string name="main_title">Disk Warrior</string>
+       <string name="about_text">Welcome to Disk Warrior!  Have fun, play around, and  im sure you will figure it out :-D</string>
+     
 </resources>

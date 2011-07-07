@@ -104,12 +104,12 @@ public class GameView  implements Callback{
 			d=controller.modelToView(d);
 			c.drawCircle(d.x, d.y, d.r, diskPaint);
 		}
-		for (Square d : model.squares) {
+/*		for (Square d : model.squares) {
 			d=controller.modelToView(d);
 			c.drawRect(d.x - d.w / 2, (d.y - d.w / 2), d.x + d.w / 2,
 					(d.y + d.w / 2), squarePaint);
 		}
-		for (Square d : model.targets) {
+*/		for (Square d : model.targets) {
 			d=controller.modelToView(d);
 			c.drawRect(d.x - d.w / 2, (d.y - d.w / 2), d.x + d.w / 2,
 					(d.y + d.w / 2), targetPaint);
@@ -135,22 +135,22 @@ public class GameView  implements Callback{
 	 */
 	private void createPaints(){
 		backgroundPaint = new Paint();
-		backgroundPaint.setColor(Color.BLUE);
+		backgroundPaint.setColor(Color.BLACK);
 
 		diskPaint = new Paint();
-		diskPaint.setColor(Color.BLACK);
+		diskPaint.setColor(Color.BLUE);
 		diskPaint.setAntiAlias(true);
 
 		squarePaint = new Paint();
-		squarePaint.setColor(Color.WHITE);
+		squarePaint.setColor(Color.RED);
 		squarePaint.setAntiAlias(true);
 
 		targetPaint = new Paint();
-		targetPaint.setColor(Color.RED);
+		targetPaint.setColor(Color.YELLOW);
 		targetPaint.setAntiAlias(true);
 		
 		textPaint = new Paint();
-		textPaint.setColor(Color.GREEN);
+		textPaint.setColor(Color.WHITE);
 		textPaint.setAntiAlias(true);
 		textPaint.setTextSize(40);
 		
